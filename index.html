@@ -1,120 +1,176 @@
 <!DOCTYPE html>
 <html>
-
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Tender Work Office</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jangir Tender & DSC Solutions</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #002147;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    h2 {
-      color: #002147;
-    }
-
-    .services {
-      background-color: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #002147;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    button {
-     <a href="tel:9876543210">
-  <button>Call Now</button>
-</a>
-    }
-  </style>
-  @media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  header, section, footer {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  button {
-    width: 100%;
-    margin-top: 10px;
-  }
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f7fa;
 }
 
+/* HEADER */
+header{
+    background: linear-gradient(135deg,#0a1f44,#102c57);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+    letter-spacing:1px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+    color:#d4af37;
+}
+
+/* GOLD BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:#d4af37;
+    color:#0a1f44;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#b8962e;
+}
+
+/* SECTION */
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:30px;
+    color:#0a1f44;
+    position:relative;
+}
+
+h2:after{
+    content:"";
+    width:80px;
+    height:3px;
+    background:#d4af37;
+    display:block;
+    margin:10px auto;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-top:4px solid #d4af37;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#102c57;
+    margin-top:0;
+}
+
+/* CONTACT */
+.contact{
+    background:#102c57;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <img src="logo.jpg" alt="Company Logo" width="120">
-  <h1>Jangir Tender & DSC Solutions</h1>
-  <p>Government Tender & Documentation Services</p>
+<header>
+    <h1>Jangir Tender & DSC Solutions</h1>
+    <p>Government Tender & Documentation Services</p>
+    <a href="#contact" class="btn">Contact Now</a>
 </header>
-  </header>
 
-  <section>
+<section>
     <h2>About Us</h2>
-    <p>We offer comprehensive tender filing and documentation services for both government and private sectors. Additionally, we provide Digital Signature Certificate (DSC) registration and related support services..</p>
-  </section>
+    <p class="about">
+        We provide comprehensive tender filing and documentation services for both 
+        government and private sectors. Additionally, we offer Digital Signature 
+        Certificate (DSC) registration and complete support services.
+    </p>
+</section>
 
-  <section>
-    <h2>Our Services</h2>
-
+<section>
+    <h2>Our Premium Services</h2>
     <div class="services">
-      <p>✔ Government Tender Filing</p>
-      <p>✔ E-Tender Documentation</p>
-      <p>✔ MSME Registration</p>
-      <p>✔ GeM Portal Work</p>
-      <p>✔ Digital Signature Certificate (DSC) Registration</p>
+        <div class="card">
+            <h3>Government Tender Filing</h3>
+            <p>Complete support in government tender submission & bidding process.</p>
+        </div>
+        <div class="card">
+            <h3>E-Tender Documentation</h3>
+            <p>Accurate document preparation & technical bid assistance.</p>
+        </div>
+        <div class="card">
+            <h3>MSME Registration</h3>
+            <p>Quick and reliable MSME/Udyam registration services.</p>
+        </div>
+        <div class="card">
+            <h3>GeM Portal Work</h3>
+            <p>GeM registration, product listing & order management support.</p>
+        </div>
+        <div class="card">
+            <h3>DSC Registration</h3>
+            <p>Digital Signature Certificate registration & renewal services.</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section>
+<div class="contact" id="contact">
     <h2>Contact Us</h2>
     <p>📞 Phone: 8209979812</p>
-    <p>📍 Location: Ghanau Teh Sidhmukh Distt Churu</p>
+    <p>📧 Email: your@email.com</p>
+</div>
 
-    <button onclick="callNow()">Call Now</button>
-  </section>
-
-  <footer>
-    <p>© 2026 Jangir Tender Solutions | All Rights Reserved</p>
-  </footer>
-
-  <script>
-    function callNow() {
-      alert("Call on: 8209979812");
-    }
-  </script>
-
-</body>
-
-</html>
