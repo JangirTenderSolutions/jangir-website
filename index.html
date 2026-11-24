@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jangir Tender & DSC Solutions</title>
+<title>Jangir Tender & Online Services</title>
 
 <style>
 body{
     margin:0;
     font-family: 'Segoe UI', sans-serif;
-    background:#f5f7fa;
+    background:#f4f6f9;
+    color:#333;
 }
 
 /* HEADER */
 header{
-    background: linear-gradient(135deg,#0a1f44,#102c57);
+    background: linear-gradient(135deg,#0a1f44,#163875);
     color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:70px 20px;
 }
 
 header h1{
     margin:0;
-    font-size:40px;
+    font-size:38px;
     letter-spacing:1px;
 }
 
 header p{
-    margin-top:10px;
+    margin-top:12px;
     font-size:18px;
-    color:#d4af37;
+    color:#f5c542;
 }
 
-/* GOLD BUTTON */
-.btn{
+.header-btn{
     display:inline-block;
     margin-top:25px;
-    padding:14px 30px;
-    background:#d4af37;
+    padding:12px 28px;
+    background:#f5c542;
     color:#0a1f44;
     text-decoration:none;
     border-radius:30px;
@@ -47,30 +45,30 @@ header p{
     transition:0.3s;
 }
 
-.btn:hover{
-    background:#b8962e;
+.header-btn:hover{
+    background:#e0b02b;
 }
 
 /* SECTION */
 section{
-    padding:70px 10%;
+    padding:60px 8%;
 }
 
 h2{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:45px;
     font-size:30px;
     color:#0a1f44;
-    position:relative;
 }
 
 h2:after{
     content:"";
-    width:80px;
-    height:3px;
-    background:#d4af37;
+    width:70px;
+    height:4px;
+    background:#f5c542;
     display:block;
-    margin:10px auto;
+    margin:10px auto 0;
+    border-radius:2px;
 }
 
 /* ABOUT */
@@ -79,36 +77,68 @@ h2:after{
     font-size:18px;
     line-height:1.8;
     color:#444;
+    max-width:850px;
+    margin:0 auto;
 }
 
-/* SERVICES */
+/* SERVICES GRID */
 .services{
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:25px;
 }
 
 .card{
     background:white;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.07);
+    border-top:4px solid #0a1f44;
     transition:0.3s;
-    border-top:4px solid #d4af37;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
+    border-top-color:#f5c542;
 }
 
 .card h3{
-    color:#102c57;
+    color:#0a1f44;
     margin-top:0;
+    font-size:20px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.portal-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#0a1f44;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    transition:0.3s;
+}
+
+.portal-btn:hover{
+    background:#f5c542;
+    color:#0a1f44;
 }
 
 /* CONTACT */
 .contact{
-    background:#102c57;
+    background:#0a1f44;
     color:white;
     text-align:center;
     padding:50px 20px;
@@ -119,8 +149,28 @@ h2:after{
 }
 
 .contact p{
-    margin:10px 0;
     font-size:18px;
+    margin:10px 0;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:white;
+    padding:14px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    z-index:1000;
+}
+
+.whatsapp-btn:hover{
+    background:#1ebe5d;
 }
 </style>
 </head>
@@ -129,8 +179,8 @@ h2:after{
 
 <header>
     <h1>Jangir Tender & DSC Solutions</h1>
-    <p>Government Tender & Documentation Services</p>
-    <a href="#contact" class="btn">Contact Now</a>
+    <p>E-Tender | DSC | GeM Portal | E-Mitra & Complete Online Services</p>
+    <a href="#contact" class="header-btn">Contact Now</a>
 </header>
 
 <section>
@@ -138,54 +188,74 @@ h2:after{
     <p class="about">
         We provide comprehensive tender filing and documentation services for both 
         government and private sectors. Additionally, we offer Digital Signature 
-        Certificate (DSC) registration and complete support services.
+        Certificate (DSC) registration, GeM portal management, and all government online services.
     </p>
 </section>
 
 <section>
-    <h2>Our Premium Services</h2>
+    <h2>Our Services & Direct Portals</h2>
     <div class="services">
 
         <div class="card">
-<h3>Rajasthan E-Procurement</h3>
-<p>Bid participation & documentation support for Rajasthan tenders.</p>
-
-<a href="https://eproc.rajasthan.gov.in" target="_blank">
-<button>Visit Rajasthan Portal</button>
-</a>
-
-</div>
-        <div class="card">
-            <h3>E-Tender Documentation</h3>
-            <p>Accurate document preparation & technical bid assistance.</p>
+            <div>
+                <h3>Rajasthan E-Procurement</h3>
+                <p>Government e-Tender filing, bid participation & complete technical documentation support.</p>
+            </div>
+            <a href="https://rajasthan.gov.in" target="_blank" class="portal-btn">Visit Rajasthan Portal ↗</a>
         </div>
-        <div class="card">
-            <h3>MSME Registration</h3>
-            <p>Quick and reliable MSME/Udyam registration services.</p>
-        </div>
-        <div class="card">
-            <h3>GeM Portal Work</h3>
-            <div class="card">
-<h3>Rajasthan E-Procurement</h3>
-<p>Bid participation & documentation support for Rajasthan tenders.</p>
 
-<a href="https://bidplus.gem.gov.in" target="_blank">
-<button>Visit GeM Portal</button>
-</a>
-
-</div>
-            <p>GeM registration, product listing & order management support.</p>
-        </div>
         <div class="card">
-            <h3>DSC Registration</h3>
-            <p>Digital Signature Certificate registration & renewal services.</p>
+            <div>
+                <h3>GeM Portal Work</h3>
+                <p>GeM seller registration, brand approval, product listing & order management support.</p>
+            </div>
+            <a href="https://gem.gov.in" target="_blank" class="portal-btn">Visit GeM Portal ↗</a>
         </div>
+
+        <div class="card">
+            <div>
+                <h3>Digital Signature (DSC)</h3>
+                <p>Class 3 Individual & Organization DSC registration, USB token & instant renewal services.</p>
+            </div>
+            <a href="https://wa.me." target="_blank" class="portal-btn">Apply for DSC 💬</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>E-Tender Documentation</h3>
+                <p>Accurate document preparation, BOQ checking & technical bid assistance for contractors.</p>
+            </div>
+            <a href="https://wa.me." target="_blank" class="portal-btn">Enquire Now 💬</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>MSME / Udyam & GST</h3>
+                <p>Quick and reliable MSME/Udyam certificate registration, GST registration & return filing.</p>
+            </div>
+            <a href="https://udyamregistration.gov.in" target="_blank" class="portal-btn">Visit Udyam Portal ↗</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>E-Mitra & Online Forms</h3>
+                <p>PAN Card, Passport, Caste/Bonafide certificate, Jan Aadhaar & all digital online services.</p>
+            </div>
+            <a href="https://rajasthan.gov.in" target="_blank" class="portal-btn">Open Rajasthan SSO ↗</a>
+        </div>
+
     </div>
 </section>
 
 <div class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>📞 Phone: 8209979812</p>
+    <p>📞 Phone / WhatsApp: 8209979812</p>
     <p>📧 Email: tenderking@gmail.com</p>
 </div>
 
+<a href="https://wa.me." target="_blank" class="whatsapp-btn">
+    💬 Chat on WhatsApp
+</a>
+
+</body>
+</html>
